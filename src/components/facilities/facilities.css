@@ -190,12 +190,11 @@
 
   .facilities-description {
     font-size: 0.95rem;
-
     text-align: left;
   }
 
   .program-header {
-    align-items: flex-start;
+    align-items: center;
   }
 
   .facility-card h3 {
