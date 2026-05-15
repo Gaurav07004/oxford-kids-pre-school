@@ -1,0 +1,44 @@
+@import "tailwindcss";
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  background: #fffdf8;
+}
+
+:root {
+  --primary-blue: #38bdf8;
+  --primary-dark-blue: #1e3a8a;
+
+  --primary-light-blue: #0e4fa433;
+
+  --primary-pink: #ff4d6d;
+  --primary-yellow: #fbbf24;
+  --primary-green: #84cc16;
+
+  --bg-primary: #fffdf8;
+  --bg-light-blue: #f0f9ff;
+  --bg-light-yellow: #fefce8;
+  --bg-light-pink: #fff1f2;
+
+  --text-primary: #334155;
+  --text-secondary: #64748b;
+  --text-white: #ffffff;
+
+  --border-light: #ff4d6e67;
+
+  --shadow-primary: 0 10px 30px rgba(0, 0, 0, 0.08);
+
+  --radius-xs: 5px;
+  --radius-sm: 10px;
+  --radius-md: 20px;
+  --radius-lg: 30px;
+
+  --font-xs: 10px;
+  --font-sm: 12px;
+  --font-md: 14px;
+  --font-lg: 16px;
+
+  --transition: all 0.3s ease;
+}

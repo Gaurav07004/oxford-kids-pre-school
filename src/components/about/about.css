@@ -1,0 +1,330 @@
+.about {
+  width: 100%;
+  padding: 6.5rem 2rem;
+
+  background-color: var(--text-white);
+}
+
+.about-container {
+  max-width: 1320px;
+  margin: auto;
+}
+
+.about-heading {
+  text-align: left;
+
+  font-size: 3rem;
+  font-weight: 600;
+
+  color: var(--primary-pink);
+}
+
+.about-heading span {
+  color: var(--primary-dark-blue);
+}
+
+.about-description,
+.mission-card p,
+.values-section p {
+  margin: 2rem auto 0;
+
+  text-align: justify;
+
+  font-size: 1rem;
+  line-height: 2;
+
+  color: var(--text-secondary);
+}
+
+.about-description span {
+  color: var(--primary-pink);
+
+  font-weight: 700;
+}
+
+.mission-vision-container {
+  margin-top: 3rem;
+
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+
+  gap: 3rem;
+}
+
+.mission-header {
+  display: flex;
+  align-items: center;
+
+  gap: 1.2rem;
+}
+
+.mission-icon {
+  width: 3rem;
+  height: 3rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 9px;
+
+  background-color: #1e3b8a37;
+
+  color: var(--primary-dark-blue);
+
+  font-size: 1.6rem;
+
+  flex-shrink: 0;
+}
+
+.mission-header h3 {
+  font-size: 1.3rem;
+  font-weight: 600;
+
+  color: var(--primary-dark-blue);
+}
+
+.stats-section {
+  margin-top: 4rem;
+}
+
+.stats-section h2,
+.values-section h2 {
+  text-align: left;
+
+  font-size: 1.6rem;
+  line-height: 2rem;
+
+  font-weight: 600;
+
+  text-transform: uppercase;
+
+  color: var(--primary-dark-blue);
+}
+
+.stats-grid {
+  margin-top: 2rem;
+
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+
+  gap: 1.5rem;
+}
+
+.stats-card {
+  border: 1px solid var(--primary-pink);
+
+  padding: 1rem;
+
+  border-radius: var(--radius-sm);
+
+  text-align: center;
+
+  transition: var(--transition);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  cursor: pointer;
+}
+
+.stats-card:hover {
+  background-color: var(--bg-light-pink);
+
+  transform: translateY(-5px);
+}
+
+.stats-icon {
+  font-size: 2.3rem;
+
+  color: var(--primary-dark-blue);
+}
+
+.stats-card h3 {
+  margin-top: 1rem;
+
+  font-size: 1.7rem;
+  font-weight: 700;
+
+  text-transform: uppercase;
+
+  color: var(--primary-dark-blue);
+}
+
+.stats-card p {
+  margin-top: 0.7rem;
+
+  color: var(--text-secondary);
+
+  font-weight: 500;
+}
+
+.values-section {
+  margin-top: 5rem;
+}
+
+.values-grid {
+  margin-top: 3rem;
+
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+
+  gap: 1rem;
+}
+
+.values-grid span {
+  border: 1px solid var(--primary-pink);
+
+  color: var(--primary-dark-blue);
+
+  padding: 10px 20px;
+
+  border-radius: var(--radius-xs);
+
+  font-weight: 600;
+
+  transition: var(--transition);
+}
+
+.values-grid span:hover {
+  background-color: var(--bg-light-pink);
+
+  cursor: pointer;
+}
+
+/* LARGE LAPTOP */
+
+@media (max-width: 1400px) {
+  .about {
+    padding-inline: 3rem;
+  }
+}
+
+/* LAPTOP */
+
+@media (max-width: 1200px) {
+  .about-heading {
+    font-size: 2.8rem;
+  }
+
+  .stats-grid {
+    gap: 1.2rem;
+  }
+}
+
+/* TABLET LANDSCAPE */
+
+@media (max-width: 992px) {
+  .about {
+    padding: 5rem 2rem;
+  }
+
+  .about-heading {
+    font-size: 2.5rem;
+  }
+
+  .mission-vision-container {
+    grid-template-columns: 1fr;
+
+    gap: 2rem;
+  }
+
+  .stats-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .mission-header h3 {
+    font-size: 1.5rem;
+  }
+}
+
+/* TABLET PORTRAIT */
+
+@media (max-width: 768px) {
+  .about {
+    padding: 4.5rem 1.5rem;
+  }
+
+  .about-heading {
+    font-size: 2.2rem;
+  }
+
+  .about-description,
+  .mission-card p,
+  .values-section p {
+    text-align: justify;
+  }
+
+  .stats-section h2,
+  .values-section h2 {
+    font-size: 1.5rem;
+  }
+
+  .values-grid {
+    justify-content: flex-start;
+  }
+}
+
+/* MOBILE */
+
+@media (max-width: 576px) {
+  .about {
+    padding: 4rem 1rem;
+  }
+
+  .about-heading {
+    font-size: 2rem;
+  }
+
+  .mission-header {
+    align-items: flex-start;
+  }
+
+  .mission-header h3 {
+    font-size: 1.2rem;
+  }
+
+  .stats-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .stats-card h3 {
+    font-size: 1.5rem;
+  }
+
+  .stats-section h2,
+  .values-section h2 {
+    font-size: 1.3rem;
+  }
+
+  .values-grid span {
+    width: 100%;
+
+    text-align: center;
+  }
+}
+
+/* SMALL MOBILE */
+
+@media (max-width: 380px) {
+  .about-heading {
+    font-size: 1.8rem;
+  }
+
+  .about-description,
+  .mission-card p,
+  .values-section p {
+    font-size: 0.95rem;
+  }
+
+  .mission-header h3 {
+    font-size: 1.1rem;
+  }
+
+  .stats-icon {
+    font-size: 2rem;
+  }
+}
